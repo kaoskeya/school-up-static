@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>School Up!</title>
+	<link rel="stylesheet" href="stylesheets/app.css" />
+	<link rel="stylesheet" href="stylesheets/custom.css" />
+	<script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+
+
+	<br />
+	<!-- When no profle is created -->
+	<div class="panel">
+		<div class="row">
+			<div class="large-12 columns">
+				<h3>User Profile Creation.</h3>
+				<p>Please submit the form below to create a profile.</p>
+			</div>
+		</div>
+	</div>
+	<!-- END: When no profle is created -->
+
+	<!-- When a profile is selected, always show! -->
+	<div class="panel">
+		<div class="row">
+			<div class="large-8 columns">
+				<h3>Selected Profile.</h3>
+				<p>Enter the student name for whom you'd like to purchase applications and submit.</p>
+			</div>
+			<div class="large-4 columns">
+			<a href="#" data-dropdown="drop" class="button small">Selected Profile Name</a><br>
+				<ul id="drop" class="f-dropdown" data-dropdown-content>
+					<li><a href="#">Another profile</a></li>
+					<li><a href="#">Yet another profile</a></li>
+					<li><a href="#">Parent, Y U NO COITUS INTERRUPTUS</a></li>
+					<li><a href="#">+ New Profile</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END: When a profile is selected, always show! -->
+
+
+	<div class="row">
+		<div class="large-12 columns">
+			<!-- PROFILE CREATION FORM HERE -->
+		</div>
+	</div>
+
+	<!-- THE JOY RIDE; Check the app.js file which kick starts the JoyRide -->
+	<ol class="joyride-list" data-joyride>
+		<li data-text="Next">
+			<h4>How this works?</h4>
+			<p>Create a separate profile for each of your students.</p>
+		</li>
+		<li data-text="Next">
+			<h4>Step 2</h4>
+			<p>Buy school applications by selecting the appropriate student profile.</p>
+		</li>
+		<li data-button="Next">
+			<h4>Step 3</h4>
+			<p>Fill out school specific additional information</p>
+		</li>
+		<li data-button="End">
+			<h4>Final Step</h4>
+			<p>Submit applicaitons to schools and proceed to create additional student profiles.</p>
+		</li>
+	</ol>
+	<!-- End joy ride -->
+
+	<script src="bower_components/jquery/jquery.js"></script>
+	<script src="bower_components/foundation/js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
